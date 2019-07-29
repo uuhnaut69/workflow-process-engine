@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>6e5f4003-016b-1000-5c13-570d9ac4abe6</groupId>
+    <name>social-nifi</name>
+    <snippet>
+        <connections>
+            <id>5b23a6be-ec27-390a-0000-000000000000</id>
+            <parentGroupId>6fa67c94-20e9-32e4-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>6fa67c94-20e9-32e4-0000-000000000000</groupId>
+                <id>15d0423d-318f-344b-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>6fa67c94-20e9-32e4-0000-000000000000</groupId>
+                <id>a695b04d-8278-3160-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>6255c2db-507e-3b18-0000-000000000000</id>
+            <parentGroupId>6fa67c94-20e9-32e4-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>6fa67c94-20e9-32e4-0000-000000000000</groupId>
+                <id>b422e9a6-247a-3656-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>6fa67c94-20e9-32e4-0000-000000000000</groupId>
+                <id>24c9cee3-808f-3d5d-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>67d66da0-ab1d-3770-0000-000000000000</id>
+            <parentGroupId>6fa67c94-20e9-32e4-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <bends>
+                <x>1218.9232729442633</x>
+                <y>330.1524558309159</y>
+            </bends>
+            <bends>
+                <x>1218.9232729442633</x>
+                <y>380.1524558309159</y>
+            </bends>
+            <destination>
+                <groupId>6fa67c94-20e9-32e4-0000-000000000000</groupId>
+                <id>b422e9a6-247a-3656-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>failure</selectedRelationships>
+            <selectedRelationships>retry</selectedRelationships>
+            <source>
+                <groupId>6fa67c94-20e9-32e4-0000-000000000000</groupId>
+                <id>b422e9a6-247a-3656-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <controllerServices>
+            <id>de882518-c4c4-3c11-0000-000000000000</id>
+            <parentGroupId>6fa67c94-20e9-32e4-0000-000000000000</parentGroupId>
+            <bundle>
+                <artifact>nifi-ssl-context-service-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <comments></comments>
+            <descriptors>
+                <entry>
+                    <key>Keystore Filename</key>
+                    <value>
+                        <name>Keystore Filename</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Keystore Password</key>
+                    <value>
+                        <name>Keystore Password</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>key-password</key>
+                    <value>
+                        <name>key-password</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Keystore Type</key>
+                    <value>
+                        <name>Keystore Type</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Truststore Filename</key>
+                    <value>
+                        <name>Truststore Filename</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Truststore Password</key>
+                    <value>
+                        <name>Truststore Password</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>Truststore Type</key>
+                    <value>
+                        <name>Truststore Type</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>SSL Protocol</key>
+                    <value>
+                        <name>SSL Protocol</name>
+                    </value>
+                </entry>
+            </descriptors>
+            <name>StandardSSLContextService</name>
+            <persistsState>false</persistsState>
+            <properties>
+                <entry>
+                    <key>Keystore Filename</key>
+                </entry>
+                <entry>
+                    <key>Keystore Password</key>
+                </entry>
+                <entry>
+                    <key>key-password</key>
+                </entry>
+                <entry>
+                    <key>Keystore Type</key>
+                </entry>
+                <entry>
+                    <key>Truststore Filename</key>
+                    <value>/usr/lib/jvm/jre/lib/security/cacerts</value>
+                </entry>
+                <entry>
+                    <key>Truststore Password</key>
+                </entry>
+                <entry>
+                    <key>Truststore Type</key>
+                    <value>JKS</value>
+                </entry>
+                <entry>
+                    <key>SSL Protocol</key>
+                    <value>TLS</value>
+                </entry>
+            </properties>
+            <state>DISABLED</state>
+            <type>org.apache.nifi.ssl.StandardSSLContextService</type>
+        </controllerServices>
+        <processors>
+            <id>15d0423d-318f-344b-0000-000000000000</id>
+            <parentGroupId>6fa67c94-20e9-32e4-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>323.55812920379077</y>
+            </position>
+            <bundle>
+                <artifact>nifi-elasticsearch-5-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>el5-cluster-name</key>
+                        <value>
+                            <name>el5-cluster-name</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-hosts</key>
+                        <value>
+                            <name>el5-hosts</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-ssl-context-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+                            <name>el5-ssl-context-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-xpack-location</key>
+                        <value>
+                            <name>el5-xpack-location</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-username</key>
+                        <value>
+                            <name>el5-username</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-password</key>
+                        <value>
+                            <name>el5-password</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-ping-timeout</key>
+                        <value>
+                            <name>el5-ping-timeout</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-sampler-interval</key>
+                        <value>
+                            <name>el5-sampler-interval</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-id-attribute</key>
+                        <value>
+                            <name>el5-put-id-attribute</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-index</key>
+                        <value>
+                            <name>el5-put-index</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-type</key>
+                        <value>
+                            <name>el5-put-type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-charset</key>
+                        <value>
+                            <name>el5-charset</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-batch-size</key>
+                        <value>
+                            <name>el5-put-batch-size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-index-op</key>
+                        <value>
+                            <name>el5-put-index-op</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>el5-cluster-name</key>
+                        <value>elasticsearch</value>
+                    </entry>
+                    <entry>
+                        <key>el5-hosts</key>
+                        <value>http://127.0.0.1:9300</value>
+                    </entry>
+                    <entry>
+                        <key>el5-ssl-context-service</key>
+                    </entry>
+                    <entry>
+                        <key>el5-xpack-location</key>
+                    </entry>
+                    <entry>
+                        <key>el5-username</key>
+                    </entry>
+                    <entry>
+                        <key>el5-password</key>
+                    </entry>
+                    <entry>
+                        <key>el5-ping-timeout</key>
+                        <value>5s</value>
+                    </entry>
+                    <entry>
+                        <key>el5-sampler-interval</key>
+                        <value>5s</value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-id-attribute</key>
+                        <value>uuid</value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-index</key>
+                        <value>facebook</value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-type</key>
+                        <value>default</value>
+                    </entry>
+                    <entry>
+                        <key>el5-charset</key>
+                        <value>UTF-8</value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-batch-size</key>
+                        <value>100</value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-index-op</key>
+                        <value>index</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>PutElasticsearch5</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>retry</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.elasticsearch.PutElasticsearch5</type>
+        </processors>
+        <processors>
+            <id>24c9cee3-808f-3d5d-0000-000000000000</id>
+            <parentGroupId>6fa67c94-20e9-32e4-0000-000000000000</parentGroupId>
+            <position>
+                <x>769.2857426530256</x>
+                <y>0.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-social-media-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Twitter Endpoint</key>
+                        <value>
+                            <name>Twitter Endpoint</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Consumer Key</key>
+                        <value>
+                            <name>Consumer Key</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Consumer Secret</key>
+                        <value>
+                            <name>Consumer Secret</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Access Token</key>
+                        <value>
+                            <name>Access Token</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Access Token Secret</key>
+                        <value>
+                            <name>Access Token Secret</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Languages</key>
+                        <value>
+                            <name>Languages</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Terms to Filter On</key>
+                        <value>
+                            <name>Terms to Filter On</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>IDs to Follow</key>
+                        <value>
+                            <name>IDs to Follow</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Locations to Filter On</key>
+                        <value>
+                            <name>Locations to Filter On</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Twitter Endpoint</key>
+                        <value>Filter Endpoint</value>
+                    </entry>
+                    <entry>
+                        <key>Consumer Key</key>
+                    </entry>
+                    <entry>
+                        <key>Consumer Secret</key>
+                    </entry>
+                    <entry>
+                        <key>Access Token</key>
+                    </entry>
+                    <entry>
+                        <key>Access Token Secret</key>
+                    </entry>
+                    <entry>
+                        <key>Languages</key>
+                    </entry>
+                    <entry>
+                        <key>Terms to Filter On</key>
+                        <value>nifi,hadoop,hortonworks,elasticsearch</value>
+                    </entry>
+                    <entry>
+                        <key>IDs to Follow</key>
+                    </entry>
+                    <entry>
+                        <key>Locations to Filter On</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>GetTwitter</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.twitter.GetTwitter</type>
+        </processors>
+        <processors>
+            <id>a695b04d-8278-3160-0000-000000000000</id>
+            <parentGroupId>6fa67c94-20e9-32e4-0000-000000000000</parentGroupId>
+            <position>
+                <x>69.87089756257802</x>
+                <y>40.82002057359921</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>URL</key>
+                        <value>
+                            <name>URL</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Filename</key>
+                        <value>
+                            <name>Filename</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>SSL Context Service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+                            <name>SSL Context Service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Username</key>
+                        <value>
+                            <name>Username</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Password</key>
+                        <value>
+                            <name>Password</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Connection Timeout</key>
+                        <value>
+                            <name>Connection Timeout</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Data Timeout</key>
+                        <value>
+                            <name>Data Timeout</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>User Agent</key>
+                        <value>
+                            <name>User Agent</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Accept Content-Type</key>
+                        <value>
+                            <name>Accept Content-Type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Follow Redirects</key>
+                        <value>
+                            <name>Follow Redirects</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>redirect-cookie-policy</key>
+                        <value>
+                            <name>redirect-cookie-policy</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>proxy-configuration-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+                            <name>proxy-configuration-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Proxy Host</key>
+                        <value>
+                            <name>Proxy Host</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Proxy Port</key>
+                        <value>
+                            <name>Proxy Port</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>URL</key>
+                        <value>https://graph.facebook.com/v2.7/289994161078999/tagged?access_token=TOKEN&amp;limit=100</value>
+                    </entry>
+                    <entry>
+                        <key>Filename</key>
+                        <value>facebook${now():toNumber()}.json</value>
+                    </entry>
+                    <entry>
+                        <key>SSL Context Service</key>
+                        <value>de882518-c4c4-3c11-0000-000000000000</value>
+                    </entry>
+                    <entry>
+                        <key>Username</key>
+                    </entry>
+                    <entry>
+                        <key>Password</key>
+                    </entry>
+                    <entry>
+                        <key>Connection Timeout</key>
+                        <value>30 sec</value>
+                    </entry>
+                    <entry>
+                        <key>Data Timeout</key>
+                        <value>30 sec</value>
+                    </entry>
+                    <entry>
+                        <key>User Agent</key>
+                        <value>Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36</value>
+                    </entry>
+                    <entry>
+                        <key>Accept Content-Type</key>
+                    </entry>
+                    <entry>
+                        <key>Follow Redirects</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>redirect-cookie-policy</key>
+                        <value>standard</value>
+                    </entry>
+                    <entry>
+                        <key>proxy-configuration-service</key>
+                    </entry>
+                    <entry>
+                        <key>Proxy Host</key>
+                    </entry>
+                    <entry>
+                        <key>Proxy Port</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>GetHTTP Facebook Hortonworks</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.GetHTTP</type>
+        </processors>
+        <processors>
+            <id>b422e9a6-247a-3656-0000-000000000000</id>
+            <parentGroupId>6fa67c94-20e9-32e4-0000-000000000000</parentGroupId>
+            <position>
+                <x>755.9232729442633</x>
+                <y>290.1524558309159</y>
+            </position>
+            <bundle>
+                <artifact>nifi-elasticsearch-5-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>el5-cluster-name</key>
+                        <value>
+                            <name>el5-cluster-name</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-hosts</key>
+                        <value>
+                            <name>el5-hosts</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-ssl-context-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+                            <name>el5-ssl-context-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-xpack-location</key>
+                        <value>
+                            <name>el5-xpack-location</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-username</key>
+                        <value>
+                            <name>el5-username</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-password</key>
+                        <value>
+                            <name>el5-password</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-ping-timeout</key>
+                        <value>
+                            <name>el5-ping-timeout</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-sampler-interval</key>
+                        <value>
+                            <name>el5-sampler-interval</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-id-attribute</key>
+                        <value>
+                            <name>el5-put-id-attribute</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-index</key>
+                        <value>
+                            <name>el5-put-index</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-type</key>
+                        <value>
+                            <name>el5-put-type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-charset</key>
+                        <value>
+                            <name>el5-charset</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-batch-size</key>
+                        <value>
+                            <name>el5-put-batch-size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-index-op</key>
+                        <value>
+                            <name>el5-put-index-op</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>el5-cluster-name</key>
+                        <value>elasticsearch</value>
+                    </entry>
+                    <entry>
+                        <key>el5-hosts</key>
+                        <value>127.0.0.1:9300</value>
+                    </entry>
+                    <entry>
+                        <key>el5-ssl-context-service</key>
+                    </entry>
+                    <entry>
+                        <key>el5-xpack-location</key>
+                    </entry>
+                    <entry>
+                        <key>el5-username</key>
+                    </entry>
+                    <entry>
+                        <key>el5-password</key>
+                    </entry>
+                    <entry>
+                        <key>el5-ping-timeout</key>
+                        <value>5s</value>
+                    </entry>
+                    <entry>
+                        <key>el5-sampler-interval</key>
+                        <value>5s</value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-id-attribute</key>
+                        <value>uuid</value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-index</key>
+                        <value>twitter</value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-type</key>
+                        <value>default</value>
+                    </entry>
+                    <entry>
+                        <key>el5-charset</key>
+                        <value>UTF-8</value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-batch-size</key>
+                        <value>100</value>
+                    </entry>
+                    <entry>
+                        <key>el5-put-index-op</key>
+                        <value>index</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>PutElasticsearch5</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>retry</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.elasticsearch.PutElasticsearch5</type>
+        </processors>
+    </snippet>
+    <timestamp>07/29/2019 08:43:21 ICT</timestamp>
+</template>
